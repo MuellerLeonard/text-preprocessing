@@ -21,11 +21,10 @@ The project is divided into **two main stages**:
 This notebook performs comprehensive **text preprocessing** on a dataset to create a clean and consistent text corpus.
 
 #### 🔧 Steps in the Pipeline
-- **Data Loading**: Imports the dataset into a pandas DataFrame.  
 - **Cleaning**:  
   - Removes unnecessary cells and rows containing NaN values in label columns.  
   - Reorders columns into:  
-    `Label Columns → Text Columns → Numerical Columns`  
+    `Label Columns | Text Columns | Numerical Columns`  
 - **Text Corpus Creation**:  
   - Concatenates all text columns into a single text corpus.  
 - **Text Cleaning Operations**:
@@ -55,14 +54,14 @@ This notebook takes the **cleaned text corpus** from the previous step and train
 - **Training**:
   - Trains a Word2Vec model on the cleaned text corpus.  
 - **Embedding Creation**:
-  - Computes a **document vector** for each row by averaging word vectors across all text columns.  
+  - Computes a **document vector** for each DataFrame row by averaging word vectors across all text columns.  
   - Stores:
     - The overall document vector.  
-    - Individual word vectors for each text column.  
+    - Individual document vector for each text column.  
 - **Evaluation**:
   - Reports:
     - Vocabulary length.  
     - Most common and rare words.  
-    - Example word similarities (e.g., `model.wv.most_similar('money')`).  
+    - Example word similarities (e.g., `most_similar('money')`).  
 - **Visualization**:
   - Generates a **t-SNE plot** to visually map word vector similarities.
