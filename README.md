@@ -16,7 +16,7 @@ The project is divided into **two main stages**:
 
 ## 📂 Notebooks
 
-### 1️⃣ `text-processing-pipeline.ipynb`
+### 1️⃣ `text-preprocessing-pipeline.ipynb`
 
 This notebook performs comprehensive **text preprocessing** on a dataset to create a clean and consistent text corpus.
 
