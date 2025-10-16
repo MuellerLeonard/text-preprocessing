@@ -47,7 +47,7 @@ This pipeline follows concepts introduced in:
 
 ---
 
-### 2️⃣ `word2vec-training.ipynb`
+### 2️⃣ `text_to_vec.ipynb`
 
 This notebook takes the **cleaned text corpus** from the previous step and trains a **Word2Vec model** using the **Gensim** library.
 
